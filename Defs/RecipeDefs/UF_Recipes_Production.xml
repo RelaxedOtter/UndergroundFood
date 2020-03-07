@@ -642,13 +642,31 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
 				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UF_EnrichedFungalStarter</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>UF_RawLaeti</li>
 				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>UF_EnrichedFungalStarter</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -689,7 +707,23 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
 				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UF_EnrichedFungalStarter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -704,6 +738,8 @@
 			<thingDefs>
 				<li>UF_RawFrigia</li>
 				<li>Plasteel</li>
+				<li>Steel</li>
+				<li>UF_EnrichedFungalStarter</li>
 				<li>ComponentSpacer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -745,7 +781,23 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UF_EnrichedFungalStarter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -760,7 +812,9 @@
 			<thingDefs>
 				<li>UF_RawPyrazite</li>
 				<li>Plasteel</li>
+				<li>Steel</li>
 				<li>ComponentIndustrial</li>
+				<li>UF_EnrichedFungalStarter</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
