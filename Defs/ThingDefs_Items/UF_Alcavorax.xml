@@ -63,7 +63,7 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.12</severityPerDay>
+        <severityPerDay>-0.11</severityPerDay>
       </li>
     </comps>
     <stages>
@@ -77,18 +77,6 @@
 		</li>
     </stages>
   </HediffDef>
-  
-  <ThoughtDef>
-    <defName>UF_AlcavoraxHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>UF_AlcavoraxHigh</hediff>
-    <stages>
-      <li>
-        <label>Itchy</label>
-        <description>My skin is itchy. This is unbearable!</description>
-        <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+ 
   
 </Defs>
