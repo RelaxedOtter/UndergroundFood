@@ -9,7 +9,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-		<texPath>Things/Plant/HopsPlant</texPath>
+		<texPath>Plants/DeepHops</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <ingestible />

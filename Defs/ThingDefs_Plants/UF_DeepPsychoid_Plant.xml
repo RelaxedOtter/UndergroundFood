@@ -9,7 +9,7 @@
       <Nutrition>0.15</Nutrition>
     </statBases>
     <graphicData>
-		<texPath>Things/Plant/PsychoidPlant</texPath>
+		<texPath>Plants/DeepPsychoid</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <ingestible />

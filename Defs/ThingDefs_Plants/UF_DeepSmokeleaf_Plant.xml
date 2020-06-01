@@ -9,7 +9,7 @@
       <Nutrition>0.15</Nutrition>
     </statBases>
     <graphicData>
-		<texPath>Things/Plant/SmokeleafPlant</texPath>
+		<texPath>Plants/DeepSmokeleaf</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <ingestible />

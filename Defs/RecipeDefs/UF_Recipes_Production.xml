@@ -95,7 +95,7 @@
 		<label>Grind chocolate</label>
 		<description>Grinds down Cococazine to extract a small amount of delicious chocolate.</description>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Cooking</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Grinding cococazine into chocolate.</jobString>
@@ -136,7 +136,7 @@
 		<label>Process neutrophyria</label>
 		<description>Processes raw neutrophyria to produce neutroamine.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Processing neutrophyria.</jobString>
@@ -177,7 +177,7 @@
 		<label>Craft herbal medicine</label>
 		<description>Processes raw sanozite gills into herbal medicine.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Crafting herbal medicine.</jobString>
@@ -211,13 +211,53 @@
 		</products>
 	</RecipeDef>
 	
+	<!-- craft sanozite at a crafting spot - takes three times as long, but reduced skill gain rate-->
+	<RecipeDef>
+		<defName>UF_ProcessSanozite_CraftingSpot</defName>
+		<label>Craft herbal medicine</label>
+		<description>Processes raw sanozite gills into herbal medicine.</description>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<jobString>Crafting herbal medicine.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workAmount>4500</workAmount>
+		<workSkillLearnFactor>0.17</workSkillLearnFactor>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>UF_AdvancedXenofungusCultivation</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UF_RawSanozite</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>UF_RawSanozite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineHerbal>1</MedicineHerbal>
+		</products>
+	</RecipeDef>
+	
 	<!-- FUNGAL SOIL STARTER production -->
 	<RecipeDef>
 		<defName>UF_FungalSoilStarterProduction</defName>
 		<label>Make fungal slurry</label>
 		<description>Chop up raw food with fungal spores into a slurry that can be used as a very basic soil.</description>
 		<workSpeedStat>CookSpeed</workSpeedStat>
-		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Cooking</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>making fungal slurry.</jobString>
@@ -274,7 +314,7 @@
 		<label>Process enriched fungal slurry</label>
 		<description>Refines basic fungal slurry with sanozite gills at a drug lab into a slurry that can be used to greatly enhance the fertility of growable soil.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>refining fungal slurry.</jobString>
@@ -323,7 +363,7 @@
 		<label>Make spyke</label>
 		<description>Distill psychoid and neutrophyria into a potent drug.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Distilling spyke.</jobString>
@@ -381,7 +421,7 @@
 		<label>Make chocoroto rollo</label>
 		<description>Roll up a chocolate-infused recreational drug.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Rolling chocoroto rollo.</jobString>
@@ -439,7 +479,7 @@
 		<label>Make five chocoroto rollos</label>
 		<description>Roll up a chocolate-infused recreational drug.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Rolling chocoroto rollo.</jobString>
@@ -497,7 +537,7 @@
 		<label>Make ToxAway</label>
 		<description>Synthesize a powerful drug that grants immunity to toxic fallout.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Synthesizing ToxAway.</jobString>
@@ -556,7 +596,7 @@
 		<label>Make BrainLok</label>
 		<description>Synthesize a powerful drug from Flake that numbs the brain to psychic drones.</description>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-		<requiredGiverWorkType>Crafting</requiredGiverWorkType>
+		<!--requiredGiverWorkType>Crafting</requiredGiverWorkType-->
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<jobString>Synthesizing BrainLok.</jobString>
